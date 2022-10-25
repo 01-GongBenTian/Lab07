@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
 
         if(transform.position.y <= -4.5f)
         {
+            //GameManager.thisManager.GameOver();
             SceneManager.LoadScene("GameLose");
         }
     }
@@ -39,6 +40,7 @@ public class Player : MonoBehaviour
     {
         if(collision.gameObject.tag == "Obstacle")
         {
+            //GameManager.thisManager.GameOver();
             SceneManager.LoadScene("GameLose");
         }
     }
